@@ -46,7 +46,13 @@ header ul li a{
 
 header:hover{
     background-color: #fff;
-    opacity: 0.75;
+}
+header .logo{
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+header:hover .logo{
+    opacity:1;
 }
 
 header:hover a{
@@ -201,4 +207,31 @@ header:hover a{
 }
 #row img{
     width: 350px;
+}
+
+
+
+.gallery-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:40px 20px 0 20px;
+}
+.gallery-container .gallery-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gallery-container .gallery-box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.gallery-container .gallery-box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
 }
