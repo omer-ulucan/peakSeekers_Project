@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+
+}
+.logo img{
+    width: 100%;
+    max-width: 125px;
+    z-index: 999;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    transition: all ease 0.5s;
+    z-index: 99999;
+}
+
+
+header ul li{
+    display: inline-block;
+    margin: 0 45px;
+}
+
+header ul li a{
+    color: white;
+    transition: all ease 0.5s;
+    font-weight: 500;
+}
+
+header:hover{
+    background-color: #fff;
+}
+
+
+header:hover #gallery{
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+header .logo{
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+header:hover .logo{
+    opacity:1;
+}
+
+header:hover a{
+    color: black;
+}
+
+
+
+
+.gallery-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:40px 20px 0 20px;
+}
+.gallery-container .gallery-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gallery-container .gallery-box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.gallery-container .gallery-box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
