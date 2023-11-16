@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>PEAK SEEKERS</title>
+    <style>
+        .blog-container{
+            width: 90%;
+        }
+        .blog-place{
+            width: auto;
+            display: flex;
+            align-items: center;
+            column-gap: 50px;
+        }
+        .bls{
+            margin-top: 50px;
+            margin-bottom: 25px;
+            width: 50%;
+            
+        }
+        .blog-text{
+            margin-left: 50px;
+            
+        }
+        .blog-text h1{
+            margin-left: 40px;
+        }
+        #bl-h1, #bl-h2 {
+            margin: 0; /* Eski margin değerlerini sıfırla */
+            padding: 0; /* Eski padding değerlerini sıfırla */
+            line-height: 1; /* Ekstra boşluğu kaldır */
+        }
+        #bl-h1 {
+            font-size: 2.5em;
+            color: #3498db; /* Mavi renk */
+            font-weight: bold;
+        }
+
+        #bl-h2 {
+            margin-left: 90px;
+            font-size: 3.5em;
+            color: #e74c3c; /* Kırmızı renk */
+            font-weight: bold;  
+        }
+
+        #grid {
+            display: flex;
+            flex-direction: column;
+        }
+        #row {
+            display: flex;
+        }
+        #row img{
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="logo">
+                <a href="#">
+                    <img src="img_vids/images/logos/ps_logo2.png">
+                </a>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog-container">Routes</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+            <ul>
+                <li><a href=""><i class="fa-solid fa-mountain"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </header>
+        <div id="home"class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <video id="slide-1" src="img_vids/vids/vid01.mp4" autoplay muted loop></video>
+                    <video id="slide-2" src="img_vids/vids/vid02.mp4" autoplay muted loop></video>
+                    <video id="slide-3" src="img_vids/vids/vid03.mp4" autoplay muted loop></video>
+                    <video id="slide-4" src="img_vids/vids/vid04.mp4" autoplay muted loop></video>
+                    <div class="text">
+                        <h2>UNRAVEL NATURE'S SECRETS</h2>
+                        <h2 class="bg">NOW!!!</h2>
+                        <h1>NOT JUST A SPORT, A PASSION. SHARE THIS PASSION WITH US!</h1>
+                        <a href="#" class="main-btn">JOIN US</a>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                </div>
+            </div>
+        </div>
+        <div id="blog-container">
+            <div class="blog-place">
+                <div class="blog-text bls">
+                    <h1><span id="bl-h1">HIKING</span><br>
+                        <span id="bl-h2">ROUTES</span>
+                    </h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, 
+                        magni molestias? Perferendis, saepe iste nulla consectetur, eos 
+                        illum doloremque, ad minus accusantium nesciunt quidem! Architecto 
+                        incidunt beatae minima et magni nisi animi asperiores culpa officia 
+                        nulla sed esse voluptatibus, facere rerum, perspiciatis sint unde 
+                        corporis porro ea consectetur! Sapiente distinctio explicabo impedit 
+                        alias iusto quae excepturi labore? Totam maiores earum, veritatis 
+                        perferendis aliquam, repellat vero tenetur corrupti tempora quos 
+                        aspernatur ipsa repudiandae consectetur veniam? Maiores tenetur 
+                        sequi modi eius sunt. Voluptatum eum voluptates cupiditate rem 
+                        velit ipsum dolore iste libero soluta veniam laboriosam autem, 
+                        impedit assumenda iure nemo, blanditiis vel placeat aliquam facilis! 
+                        Molestias nobis vel odio cupiditate perferendis pariatur, minus 
+                        excepturi nulla quo vero magni, saepe eos rerum exercitationem 
+                        adipisci ipsam, vitae autem voluptatibus! Nam reprehenderit 
+                        consequuntur aspernatur. Fugit quidem voluptatem incidunt 
+                        praesentium similique debitis laudantium adipisci magni! Quibusdam 
+                        sunt necessitatibus quam corporis doloremque molestias nemo doloribus 
+                        dolorum molestiae vero magnam libero accusantium culpa, aliquam 
+                        consequuntur dolorem mollitia sit! Numquam molestias cum odio officia. </p>
+                </div>
+                <div class="blog-pics bls">
+                    <div id="grid">
+                        <div id="row">
+                            <img src="img_vids/images/routes/route01.jpeg" alt="">
+                            <img src="img_vids/images/routes/route02.jpeg" alt="">
+                        </div>
+                        <div id="row">
+                            <img src="img_vids/images/routes/route03.jpeg" alt="">
+                            <img src="img_vids/images/routes/route04.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-container">
+            <div class="gallery-place">
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
